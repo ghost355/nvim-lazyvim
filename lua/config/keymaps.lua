@@ -11,4 +11,5 @@ map("n", "<leader>oo", "<cmd>Neotree toggle<cr>", { desc = "Focus NeoTree" })
 
 map("n", "<leader>.", "<cmd>Neotree buffers focus<cr>", { desc = "Toggle NeoTree buffers" })
 map("n", "<leader>..", "<cmd>Neotree buffers toggle<cr>", { desc = "Toggle NeoTree buffers" })
+
 map("n", "<leader>ge", "<cmd>Neotree git_status toggle<cr>", { desc = "Toggle NeoTree Gitstatus" })
