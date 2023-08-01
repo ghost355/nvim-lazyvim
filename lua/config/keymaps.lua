@@ -14,3 +14,9 @@ map("n", "<leader>.", "<cmd>Neotree buffers focus<cr>", { desc = "Toggle NeoTree
 map("n", "<leader>..", "<cmd>Neotree buffers toggle<cr>", { desc = "Toggle NeoTree buffers" })
 
 map("n", "<leader>ge", "<cmd>Neotree git_status toggle<cr>", { desc = "Toggle NeoTree Gitstatus" })
+
+vim.api.nvim_create_user_command("LuaSnipEdit", function()
+  require("luasnip.loaders").edit_snippet_files()
+end, { nargs = "*" })
+
+map("n", "<leader>fs", "<cmd>LuaSnipEdit<cr>", { desc = "Edit Snippet file" })
